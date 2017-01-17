@@ -20,8 +20,8 @@ app.post('/webhook', function(req, res) {
     console.log(req.body)
     const data = getJobs(req.body.result).map((item) => item.link)
     const responseData = {
-        "speech": data.slice(0, 3).join("\n"),
-        "displayText": data.slice(0, 3).join("\n"),
+        "speech": "speech",
+        "displayText": "text",
         "data": {
             "facebook": {
                 "attachment": {
@@ -51,6 +51,28 @@ app.post('/webhook', function(req, res) {
                                         "payload": "DEVELOPER_DEFINED_PAYLOAD"
                                     }
                                 ]
+                            }, {
+                                "title": " to Peter\'s Hats",
+                                "image_url": "https://petersfancybrownhats.com/company_image.png",
+                                "subtitle": "We\'ve got the right hat for everyone.",
+                                "default_action": {
+                                    "type": "web_url",
+                                    "url": "https://peterssendreceiveapp.ngrok.io/view?item=103",
+                                    "messenger_extensions": true,
+                                    "webview_height_ratio": "tall",
+                                    "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
+                                },
+                                "buttons": [
+                                    {
+                                        "type": "web_url",
+                                        "url": "https://petersfancybrownhats.com",
+                                        "title": "View Website"
+                                    }, {
+                                        "type": "postback",
+                                        "title": "Start Chatting",
+                                        "payload": "DEVELOPER_DEFINED_PAYLOAD"
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -58,7 +80,7 @@ app.post('/webhook', function(req, res) {
             }
         },
         "contextOut": [],
-        "source": "KMS"
+        "source": "agent"
     }
     res.json(responseData)
 })
