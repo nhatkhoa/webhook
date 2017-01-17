@@ -20,14 +20,14 @@ app.post('/webhook', function(req, res) {
     console.log(req.body)
     const data = getJobs(req.body.result).map((item) => item.link)
     const responseData = {
-        "speech": "",
-        "displayText": JSON.stringify(data),
+        "speech": "abc",
+        "displayText": data,
         "data": {
         },
         "contextOut": "",
         "source": "KMS"
     }
-    res.send(responseData)
+    res.json(responseData)
 })
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
