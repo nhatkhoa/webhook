@@ -24,7 +24,7 @@ app.post('/webhook', function(req, res) {
         "displayText": data.join("\n"),
         "data": {
         },
-        "contextOut": "context.job_listing",
+        "contextOut": [],
         "source": "KMS"
     }
     res.json(responseData)
