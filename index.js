@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 const {items} = require('./data.json')
 
 const getJobs = (data) => {
-    if (data.action !== 'kabo.getJobs')
+    if (data.action !== 'kabo.webhook.getJobs')
         return
     return items;
 }
@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
 
 app.post('/webhook', function(req, res) {
     console.log(req.body)
-    const data = getJobs(req.body).map((item) => item.link)
+    const data = getJobs(req.body.result).map((item) => item.link)
     const responseData = {
         "speech": "",
         "displayText": JSON.stringify(data),
