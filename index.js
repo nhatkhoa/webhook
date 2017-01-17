@@ -32,5 +32,7 @@ app.get('/webhook', function(req, res) {
     }
     res.send(responseData)
 })
-
-app.listen(8080)
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+    console.log('Our app is running on port '  + port);
+})
