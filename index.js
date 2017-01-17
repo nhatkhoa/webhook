@@ -17,9 +17,6 @@ app.get('/', function(req, res) {
 })
 
 app.post('/webhook', function(req, res) {
-    req.body = {
-        action: 'kabo.getJobs'
-    }
     console.log(req.body)
     const data = getJobs(req.body).map((item) => item.link)
     const responseData = {
