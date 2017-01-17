@@ -31,89 +31,70 @@ app.post('/webhook', function(req, res) {
                         "elements": [
                             {
                                 "title": "Classic T-Shirt Collection",
-                                "image_url": "https://peterssendreceiveapp.ngrok.io/img/collection.png",
+                                "image_url": "http://topit-static.vietnamworks.com/companies/wp-content/uploads/2016/06/KMS-logo-1.png",
                                 "subtitle": "See all our colors",
                                 "default_action": {
                                     "type": "web_url",
-                                    "url": "https://peterssendreceiveapp.ngrok.io/shop_collection",
+                                    "url": "http://careers.kms-technology.com/job/software-architect-strong-front-end",
                                     "messenger_extensions": true,
                                     "webview_height_ratio": "tall",
-                                    "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
+                                    "fallback_url": "http://careers.kms-technology.com/job/software-architect-strong-front-end"
                                 },
                                 "buttons": [
                                     {
                                         "title": "View",
                                         "type": "web_url",
-                                        "url": "https://peterssendreceiveapp.ngrok.io/collection",
+                                        "url": "http://careers.kms-technology.com/job/software-architect-strong-front-end",
                                         "messenger_extensions": true,
                                         "webview_height_ratio": "tall",
-                                        "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
+                                        "fallback_url": "http://careers.kms-technology.com/job/software-architect-strong-front-end"
                                     }
                                 ]
-                            }, {
+                            },
+                            {
                                 "title": "Classic White T-Shirt",
-                                "image_url": "https://peterssendreceiveapp.ngrok.io/img/white-t-shirt.png",
+                                "image_url": "https://media.glassdoor.com/sqll/429755/kms-technology-squarelogo.png",
                                 "subtitle": "100% Cotton, 200% Comfortable",
                                 "default_action": {
                                     "type": "web_url",
-                                    "url": "https://peterssendreceiveapp.ngrok.io/view?item=100",
+                                    "url": "http://careers.kms-technology.com/job/senior-oc-executive",
                                     "messenger_extensions": true,
                                     "webview_height_ratio": "tall",
-                                    "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
+                                    "fallback_url": "http://careers.kms-technology.com/job/senior-oc-executive"
                                 },
                                 "buttons": [
                                     {
                                         "title": "Shop Now",
                                         "type": "web_url",
-                                        "url": "https://peterssendreceiveapp.ngrok.io/shop?item=100",
+                                        "url": "http://careers.kms-technology.com/job/senior-oc-executive",
                                         "messenger_extensions": true,
                                         "webview_height_ratio": "tall",
-                                        "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
+                                        "fallback_url": "http://careers.kms-technology.com/job/senior-oc-executive"
                                     }
                                 ]
-                            }, {
-                                "title": "Classic Blue T-Shirt",
-                                "image_url": "https://peterssendreceiveapp.ngrok.io/img/blue-t-shirt.png",
+                            },
+                            {
+                                "title": "Casdasdasd",
+                                "image_url": "https://media.glassdoor.com/sqll/429755/kms-technology-squarelogo.png",
                                 "subtitle": "100% Cotton, 200% Comfortable",
                                 "default_action": {
                                     "type": "web_url",
-                                    "url": "https://peterssendreceiveapp.ngrok.io/view?item=101",
+                                    "url": "http://careers.kms-technology.com/job/senior-oc-executive",
                                     "messenger_extensions": true,
                                     "webview_height_ratio": "tall",
-                                    "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
+                                    "fallback_url": "http://careers.kms-technology.com/job/senior-oc-executive"
                                 },
                                 "buttons": [
                                     {
                                         "title": "Shop Now",
                                         "type": "web_url",
-                                        "url": "https://peterssendreceiveapp.ngrok.io/shop?item=101",
+                                        "url": "http://careers.kms-technology.com/job/senior-oc-executive",
                                         "messenger_extensions": true,
                                         "webview_height_ratio": "tall",
-                                        "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
+                                        "fallback_url": "http://careers.kms-technology.com/job/senior-oc-executive"
                                     }
                                 ]
-                            }, {
-                                "title": "Classic Black T-Shirt",
-                                "image_url": "https://peterssendreceiveapp.ngrok.io/img/black-t-shirt.png",
-                                "subtitle": "100% Cotton, 200% Comfortable",
-                                "default_action": {
-                                    "type": "web_url",
-                                    "url": "https://peterssendreceiveapp.ngrok.io/view?item=102",
-                                    "messenger_extensions": true,
-                                    "webview_height_ratio": "tall",
-                                    "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
-                                },
-                                "buttons": [
-                                    {
-                                        "title": "Shop Now",
-                                        "type": "web_url",
-                                        "url": "https://peterssendreceiveapp.ngrok.io/shop?item=102",
-                                        "messenger_extensions": true,
-                                        "webview_height_ratio": "tall",
-                                        "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
-                                    }
-                                ]
-                            }
+                            },
                         ],
                         "buttons": [
                             {
