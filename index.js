@@ -21,7 +21,7 @@ app.post('/webhook', function(req, res) {
     const data = getJobs(req.body.result).map((item) => item.link)
     const responseData = {
         "speech": data.join("\n"),
-        "displayText": data.join("\n"),
+        "displayText": data.slice(0, 3).join("\n"),
         "data": {},
         "contextOut": [],
         "source": "KMS"
